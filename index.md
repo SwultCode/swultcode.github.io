@@ -1,5 +1,3 @@
-Here you can say lots of fun things about your site.
+Hey! I'm a Math & Data Science Major from Australia who works professionally editing videos.
 
-Maybe say a some things about yourself.
-
-Or maybe what you plan to blog about.
+I'm hoping you'll find some of my personal projects here nice, this is more meant to act as a canvas for me to toy around with showcasing some of my personal work!
