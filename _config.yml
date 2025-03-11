@@ -1,13 +1,13 @@
-title: "Swult's Space"
-author: "Swult (Sam)"
-description: "Hey! Welcome to my little space on the internet! I'll try to showcase some of my projects here." # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
+title: "swultcode.github.io"
+author: "Sam Walsh"
+description: "Swultcode is the alias of Samuel Walsh, the mildly successful Motion Designer, Video Editor, and Data Analyst." # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
 
 # Email / Social media user names used by the minima theme:
 # All of these are optional and can be removed or commented out
 email: "contact@swu.lt"
 twitter_username: "Swultvevo"
 github_username: "SwultCode"
-#linkedin_username: "linkedinuser"
+linkedin_username: "ssamwalshh"
 #facebook_username: username
 #flickr_username: username
 #instagram_username: username
@@ -24,7 +24,7 @@ rss: rss
 
 kramdown:
   syntax_highlighter_opts:
-    disable: true
+    disable: false
     
 plugins:
   - jekyll-feed
