@@ -19,7 +19,7 @@ layout: default
       {%- endif -%}</p>
     {% if page.tags %}
     <div class="post-tags">
-      {% include tag.html %}
+      {% include tag.html tags=page.tags %}
     </div>
     {% endif %}
   </header>
