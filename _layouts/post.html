@@ -19,27 +19,7 @@ layout: default
       {%- endif -%}</p>
     {% if page.tags %}
     <div class="post-tags">
-      {% for tag in page.tags %}
-        <a href="/tags#{{ tag }}" class="tag{% if layout.name != 'post' %} icon-only{% endif %}">
-          {% case tag %}
-          {% when 'java' %}
-            <i class="fab fa-java"></i>
-          {% when 'python' %}
-            <i class="fab fa-python"></i>
-          {% when 'rust' %}
-            <i class="fab fa-rust"></i>
-          {% when 'mathematics' %}
-            <i class="fas fa-square-root-variable"></i>
-          {% when 'janestreet' %}
-            <i class="fas fa-puzzle-piece"></i>
-            <span>{{ tag }}</span>
-          {% else %}
-            <i class="fas fa-tag"></i>
-            <span>{{ tag }}</span>
-          {% endcase %}
-          {{ tag }}
-        </a>
-      {% endfor %}
+      {% include tag.html %}
     </div>
     {% endif %}
   </header>

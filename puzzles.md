@@ -3,6 +3,12 @@ layout: page
 title: JaneStreet Puzzles
 ---
 
+<link href="/css/override.css" rel="stylesheet" type="text/css">
+<link href="/css/tags.css" rel="stylesheet" type="text/css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+{% include tag.html %}
+
 # JaneStreet Puzzle Archive
 
 This is an archive of my attempts at solving [Jane Street's monthly puzzles](https://www.janestreet.com/puzzles/). Each entry includes the puzzle name, completion status, and my solution approach.
@@ -20,6 +26,7 @@ This is an archive of my attempts at solving [Jane Street's monthly puzzles](htt
     {% else %}
     <span class="puzzle-status attempted">Attempted</span>
     {% endif %}
+    {% include tag.html tags=post.tags %}
   </li>
 {% endfor %}
 </ul>

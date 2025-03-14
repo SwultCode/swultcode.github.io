@@ -1,0 +1,19 @@
+{% for tag in include.tags %}
+  <a href="/tags#{{ tag }}" class="tag">
+    {% case tag %}
+    {% when 'java' %}
+      <i class="fab fa-java"></i>
+    {% when 'python' %}
+      <i class="fab fa-python"></i>
+    {% when 'rust' %}
+      <i class="fab fa-rust"></i>
+    {% when 'mathematics' %}
+      <i class="fas fa-square-root-variable"></i>
+    {% when 'janestreet' %}
+      <i class="fas fa-puzzle-piece"></i>
+    {% else %}
+      <i class="fas fa-tag"></i>
+    {% endcase %}
+    <span>{{ tag }}</span>
+  </a>
+{% endfor %}
