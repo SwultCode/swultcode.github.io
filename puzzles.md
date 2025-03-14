@@ -21,7 +21,13 @@ This is an archive of my attempts at solving [Jane Street's monthly puzzles](htt
   <li>
     <span class="puzzle-date">{{ post.date | date: "%B %Y" }}</span>
     <a href="{{ post.url }}">{{ post.title }}</a>
-    {% include tag.html tags=post.tags | reject: 'janestreet' %}
+    {% assign filtered_tags = "" | split: "" %}
+    {% for tag in post.tags %}
+      {% if tag != "janestreet" %}
+        {% assign filtered_tags = filtered_tags | push: tag %}
+      {% endif %}
+    {% endfor %}
+    {% include tag.html tags=filtered_tags %}
     
     {% if post.completed %}
     <span class="puzzle-status completed">Completed</span>
