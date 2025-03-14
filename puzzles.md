@@ -11,7 +11,7 @@ title: JaneStreet Puzzles
 
 # JaneStreet Puzzle Archive
 
-This is an archive of my attempts at solving [Jane Street's monthly puzzles](https://www.janestreet.com/puzzles/). Each entry includes the puzzle name, completion status, and my solution approach.
+This is an archive of my attempts at solving [Jane Street's monthly puzzles](https://www.janestreet.com/puzzles/).
 
 {% assign puzzle_posts = site.posts | where: "tags", "janestreet" %}
 {% assign puzzle_posts = puzzle_posts | sort: "date" | reverse %}
