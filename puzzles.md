@@ -21,12 +21,13 @@ This is an archive of my attempts at solving [Jane Street's monthly puzzles](htt
   <li>
     <span class="puzzle-date">{{ post.date | date: "%B %Y" }}</span>
     <a href="{{ post.url }}">{{ post.title }}</a>
+    {% include tag.html tags=post.tags | reject: 'janestreet' %}
+    
     {% if post.completed %}
     <span class="puzzle-status completed">Completed</span>
     {% else %}
     <span class="puzzle-status attempted">Attempted</span>
     {% endif %}
-    {% include tag.html tags=post.tags %}
   </li>
 {% endfor %}
 </ul>
