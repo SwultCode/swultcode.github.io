@@ -50,17 +50,28 @@ hr {
 }
 
 .puzzle-archive li {
-  margin-bottom: 1em;
-  padding: 0.5em;
+  margin-bottom: 0.5em;
+  padding: 0.3em;
   border-bottom: 1px solid #eee;
   display: flex;
   align-items: center;
-  gap: 1em;
+  gap: 0.5em;
 }
 
 .puzzle-date {
   color: #666;
   min-width: 120px;
+}
+
+@media screen and (max-width: 760px) {
+  .puzzle-date {
+    display: none;
+  }
+  
+  .puzzle-archive li {
+    padding: 0.2em;
+    gap: 0.3em;
+  }
 }
 
 .puzzle-status {
@@ -80,38 +91,4 @@ hr {
   background-color: #fff3e6;
   color: #cc6600;
   border: 1px solid #ff9933;
-}
-
-
-@media (max-width: 768px) {
-  .puzzle-archive li {
-    gap: 0.8em;
-    padding: 1em 0;
-  }
-  
-  .puzzle-archive a {
-    flex-basis: 100%;
-    margin-right: 0;
-  }
-  
-  .puzzle-status {
-    padding: 0.4em 0.8em;
-    margin-top: 0.5em;
-  }
-  
-  .post-tags {
-    order: 2;
-    margin-left: -0.25em;
-    flex-wrap: wrap;
-    gap: 0.2em;
-    margin-right: 0.5em;
-    flex-shrink: 0;
-  }
-  
-  .tag {
-    font-size: 0.8em;
-    padding: 0.2em 0.5em;
-    margin: 0.05em;
-    white-space: nowrap;
-  }
 }
