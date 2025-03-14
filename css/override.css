@@ -43,3 +43,41 @@ hr {
   font-size: 2.5em;
   opacity: 0.3;
 }
+
+.puzzle-archive {
+  list-style: none;
+  padding: 0;
+}
+
+.puzzle-archive li {
+  margin-bottom: 1em;
+  padding: 0.5em;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.puzzle-date {
+  color: #666;
+  min-width: 120px;
+}
+
+.puzzle-status {
+  padding: 0.25em 0.5em;
+  border-radius: 3px;
+  font-size: 0.9em;
+  margin-left: auto;
+}
+
+.puzzle-status.completed {
+  background-color: #e6ffe6;
+  color: #006600;
+  border: 1px solid #00cc00;
+}
+
+.puzzle-status.attempted {
+  background-color: #fff3e6;
+  color: #cc6600;
+  border: 1px solid #ff9933;
+}
