@@ -16,6 +16,7 @@
   color: #666;
   text-decoration: none;
   transition: background-color 0.2s;
+  text-transform: capitalize;
 }
 
 .tag:hover {
@@ -25,4 +26,18 @@
 
 .tag i {
   font-size: 1em;
+}
+
+.tag.icon-only {
+  padding: 0.2em;
+  background: none;
+}
+
+.tag.icon-only span {
+  display: none;
+}
+
+.tag.icon-only i {
+  color: #666;
+  font-size: 1.1em;
 }
