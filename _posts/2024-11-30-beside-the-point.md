@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Beside the Point"
-tags: janestreet, mathematics, matlab
+tags: [janestreet, mathematics, matlab]
 completed: true
 ---
 

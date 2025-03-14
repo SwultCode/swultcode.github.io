@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Beside the Point"
-tags: janestreet, excel
+tags: [janestreet, excel]
 completed: true
 ---
 

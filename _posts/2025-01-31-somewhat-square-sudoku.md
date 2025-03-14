@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Somewhat Square Sudoku"
-tags: janestreet, rust
+tags: [janestreet, rust]
 completed: false
 ---
 

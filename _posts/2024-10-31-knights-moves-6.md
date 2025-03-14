@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Knight Moves 6"
-tags: janestreet, python, jupyter
+tags: [janestreet, python, jupyter]
 completed: true
 ---
 
